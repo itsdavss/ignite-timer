@@ -1,54 +1,63 @@
-# React + TypeScript + Vite
+# Ignite Timer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This was the project developed in level 02 of Rocketseat's React course.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [Screenshots](#screenshots)
+- [How to Run the Project](#how-to-run-the-project)
+- [Developed with](#developed-with)
+- [Author](#author)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This project is a timer where you can enter the task or project you’ll be working on and start the countdown. You also have access to a task history that shows what you worked on, how long it took, and whether it was completed, interrupted, or is still in progress.
+### Screenshots
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+#### Desktop design
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Initial State
+![](screenshots/Screenshot_1.png)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Active State
+![](screenshots/Screenshot_3.png)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### History page
+![](screenshots/Screenshot_2.png)
+
+## How to Run the Project
+
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone "https://github.com/itsdavss/ignite-timer"
+
+2. Navigate to the project folder:
+   ```bash
+   cd ignite-timer
+
+3. Install the dependencies:
+   ```bash
+   npm install
+
+4. Start the development server:
+   ```bash
+   npm run dev
+
+## Developed with
+
+- Typescript 
+- React
+- Styled Components
+- Contexts
+- React Router DOM
+- React Hook Form
+- Zod
+- Immer
+
+## Author
+
+- GitHub - [itsdavss](https://github.com/itsdavss)
+- My portfolio - [Davi Oliveira](https://itsdavss.github.io/portfolio-davi/)
