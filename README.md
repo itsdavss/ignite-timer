@@ -2,6 +2,8 @@
 
 This was the project developed in level 02 of Rocketseat's React course.
 
+## [View the project here](https://ignitetimer-lime.vercel.app/) ##
+
 ## Table of contents
 
 - [Overview](#overview)
